@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Convite Especial 💌</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #4b2e05;
+    text-align: center;
+    padding: 20px;
+  }
+  .container {
+    background: #fff9e6;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    padding: 30px 40px;
+    max-width: 400px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #d97f00;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  .buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  button {
+    background-color: #f8b500;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #4b2e05;
+    font-weight: 600;
+  }
+  button:hover {
+    background-color: #d97f00;
+    color: white;
+  }
+  #response {
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    min-height: 40px;
+    color: #b34700;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Convite Especial 💌</h1>
+    <p>
+      Oi! 😊<br />
+      Quero saber se você topa:<br /><br />
+      1️⃣ Passar esse final de semana juntinhos.<br />
+      2️⃣ Ir comigo ao casamento do meu primo no dia 16.<br /><br />
+      Se topar, é só clicar em:<br />
+      <b>( ) SIM, QUERO</b> ou <b>( ) NÃO POSSO</b>
+    </p>
+    <div class="buttons">
+      <button id="btnSim">SIM, QUERO</button>
+      <button id="btnNao">NÃO POSSO</button>
+    </div>
+    <div id="response"></div>
+  </div>
+
+<script>
+  const response = document.getElementById('response');
+  document.getElementById('btnSim').addEventListener('click', () => {
+    response.style.color = '#4CAF50';
+    response.textContent = 'Então é um combo fechado! 💕';
+  });
+  document.getElementById('btnNao').addEventListener('click', () => {
+    response.style.color = '#e53935';
+    response.textContent = 'TA FICANDO LOUCA VAI LOGO RESPONDE SIM OSHIIII!!! 😂🔥';
+  });
+</script>
+</body>
+</html>
